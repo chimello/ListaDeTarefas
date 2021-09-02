@@ -44,7 +44,7 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-        String sql1 = "ALTER TABLE " + TABELA_TAREFAS + " ADD dataVencimento TIMESTAMP;";
+        String sql1 = "ALTER TABLE " + TABELA_TAREFAS + " ADD dataVencimento DATETIME;";
         String sql2 = "ALTER TABLE " + TABELA_TAREFAS + " ADD dataCadastro DATETIME;";
 
         try {

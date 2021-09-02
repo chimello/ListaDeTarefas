@@ -154,7 +154,7 @@ public class AdicionarTarefaActivity extends AppCompatActivity {
                         tarefa.setNomeTarefa(nomeTarefa);
                         tarefa.setStatus("A");
                         tarefa.setDataCadastro(getcurrentDateAndTime());
-                        tarefa.setDataVencimento(dataVencimento);
+                        tarefa.setDataVencimento(getcurrentDateAndTime()/*dataVencimento*/);
                         if ( tarefaDAO.salvar(tarefa)) {
                             finish();
                             Toast.makeText(

@@ -31,6 +31,7 @@ public class TarefaDAO implements iTarefaDAO {
         cv.put("nome", tarefa.getNomeTarefa());
         cv.put("status", tarefa.getStatus());
         cv.put("dataCadastro", String.valueOf(tarefa.getDataCadastro()));
+        cv.put("dataVencimento", String.valueOf(tarefa.getDataVencimento()));
         if (tarefa.getDataVencimento() == null) {
             tarefa.setDataVencimento(String.valueOf(tarefa.getDataCadastro()));
         } else {
